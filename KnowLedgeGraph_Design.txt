@@ -1,0 +1,19 @@
+Nodes:
+Person
+Event
+
+
+Properties:
+
+Person:
+    General info
+    Career
+    Death
+
+Event:
+
+
+
+Relationships:
+Person -[career, death, general info]-> Person
+Person -[career, death, general info]-> Event
