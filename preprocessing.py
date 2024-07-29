@@ -39,7 +39,7 @@ def save_text_to_file(text, output_path):
 
 
 # Example file path (replace with your actual file path)
-file_path = r'data\raw\Charles Maurice de Talleyrand-Périgord.html'
+file_path = r'data\raw\The Indispensable Talleyrand _ Hoover Institution The Indispensable Talleyrand.html'
 
 # Read the local HTML file
 html_content = read_local_html(file_path)
@@ -48,6 +48,6 @@ html_content = read_local_html(file_path)
 extracted_text = extract_text_from_html(html_content)
 
 # Save the extracted text to a file
-save_text_to_file(extracted_text, 'data/cleaned/Talleyrand.txt')
+save_text_to_file(extracted_text, 'data/cleaned/The Indispensable Talleyrand _ Hoover Institution The Indispensable Talleyrand.txt')
 
 print(f"Text has been extracted and saved")

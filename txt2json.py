@@ -42,8 +42,8 @@ def save_json_to_file(data, output_path):
         json.dump(data, file, indent=4, ensure_ascii=False)
 
 
-input_file_path = r"data\cleaned\Napoleon.txt"
-output_file_path = 'data/json/Napoleon.json'
+input_file_path = r"data\cleaned\Talleyrand.txt"
+output_file_path = 'data/json/Talleyrand.json'
 
 
 text_data = read_text_file(input_file_path)
