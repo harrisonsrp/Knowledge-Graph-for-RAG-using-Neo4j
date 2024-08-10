@@ -24,6 +24,3 @@ question = "Who was leading the Battle of Waterloo?"
 result_relationship = query_graph_or_vector_rag(True, question)
 print(result_relationship)
 
-# # Use VectorRAG
-# result_vector = query_graph_or_vector_rag(False, question)
-# print(result_vector)
