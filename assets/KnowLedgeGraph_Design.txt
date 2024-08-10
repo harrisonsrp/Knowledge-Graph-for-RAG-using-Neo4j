@@ -1,0 +1,97 @@
+Knowledge Graph Design
+
+Node Properties:
+
+- Person:
+  - name: STRING
+
+- Napoleon_Chunk:
+  - chunkId: STRING
+  - formItem: STRING
+  - chunkSeqId: INTEGER
+  - text: STRING
+  - source: STRING
+  - textEmbeddingOpenAI: LIST
+
+- Talleyrand_Chunk:
+  - chunkId: STRING
+  - formItem: STRING
+  - chunkSeqId: INTEGER
+  - text: STRING
+  - source: STRING
+  - textEmbeddingOpenAI: LIST
+
+- Waterloo_Chunk:
+  - chunkId: STRING
+  - formItem: STRING
+  - chunkSeqId: INTEGER
+  - text: STRING
+  - source: STRING
+  - textEmbeddingOpenAI: LIST
+
+- Event:
+  - name: STRING
+
+- Career:
+  - period: STRING
+  - position: STRING
+  - chunk_info: STRING
+
+- Death:
+  - date: STRING
+  - location: STRING
+  - chunk_info: STRING
+
+- General_info:
+  - location: STRING
+  - chunk_info: STRING
+  - battleDate: STRING
+  - outcome: STRING
+  - commander: STRING
+  - knownFor: STRING
+  - nationality: STRING
+  - deathDate: STRING
+  - birthDate: STRING
+
+- Reason:
+  - chunk_info: STRING
+  - cause: STRING
+  - strategicMistake: STRING
+  - politicalImpact: STRING
+
+- Combatant:
+  - chunk_info: STRING
+  - frenchCommander: STRING
+  - alliedCommander: STRING
+  - prussianCommander: STRING
+  - mainForces: STRING
+
+- Consequence:
+  - chunk_info: STRING
+  - immediateResult: STRING
+  - longTermImpact: STRING
+  - geopoliticalEffect: STRING
+
+Relationships:
+
+- (:Person)-[:RELATED_TO]->(:Event)
+- (:Person)-[:RELATED_TO]->(:Person)
+- (:Person)-[:HAS_Career_INFO]->(:Career)
+- (:Person)-[:HAS_Death_INFO]->(:Death)
+- (:Person)-[:HAS_General_INFO]->(:General_info)
+- (:Napoleon_Chunk)-[:NEXT]->(:Napoleon_Chunk)
+- (:Talleyrand_Chunk)-[:NEXT]->(:Talleyrand_Chunk)
+- (:Waterloo_Chunk)-[:NEXT]->(:Waterloo_Chunk)
+- (:Event)-[:HAS_Combatant_INFO]->(:Combatant)
+- (:Event)-[:HAS_Consequence_INFO]->(:Consequence)
+- (:Event)-[:HAS_Chunk_INFO]->(:General_info)
+- (:Career)-[:HAS_Chunk_INFO]->(:Napoleon_Chunk)
+- (:Career)-[:HAS_Chunk_INFO]->(:Talleyrand_Chunk)
+- (:Death)-[:HAS_Chunk_INFO]->(:Napoleon_Chunk)
+- (:Death)-[:HAS_Chunk_INFO]->(:Talleyrand_Chunk)
+- (:General_info)-[:HAS_Chunk_INFO]->(:Napoleon_Chunk)
+- (:General_info)-[:HAS_Chunk_INFO]->(:Talleyrand_Chunk)
+- (:General_info)-[:HAS_Chunk_INFO]->(:Waterloo_Chunk)
+- (:Reason)-[:HAS_Chunk_INFO]->(:Waterloo_Chunk)
+- (:Combatant)-[:HAS_Chunk_INFO]->(:Waterloo_Chunk)
+- (:Consequence)-[:HAS_Chunk_INFO]->(:Waterloo_Chunk)

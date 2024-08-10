@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "knowledge-graph-for-rag-using-neo4j"
+version = "0.1.0"
+description = ""
+authors = ["Homayoun.srp@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+neo4j = "^5.23.1"
+pypdf3 = "^1.0.6"
+langchain = "^0.2.12"
+python-dotenv = "^1.0.1"
+langchain-community = "^0.2.11"
+langchain-openai = "^0.1.20"
+beautifulsoup4 = "^4.12.3"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
