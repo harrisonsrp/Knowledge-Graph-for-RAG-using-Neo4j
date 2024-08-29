@@ -1,5 +1,8 @@
 # Knowledge Graph for Napoleon History Using Neo4j
 
+Watch demo on my linkedin:
+https://www.linkedin.com/posts/homayounsrp_graphrag-vectorrag-activity-7223765289434296320-5rQC?utm_source=share&utm_medium=member_ios
+
 This project is divided into two main parts:
 
 1. **Designing the Knowledge Graph and Ingesting Data**
