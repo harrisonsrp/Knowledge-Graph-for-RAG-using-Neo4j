@@ -32,3 +32,9 @@ If you want to use your personal data, follow these steps:
 4. Design your custom knowledge graph by modifying the Nodes_and_Relationships.ipynb notebook in the knowledge_graph folder.
 5. Use the generated JSON file as input for your knowledge graph.
 6. Modify Chunking.py to chunk your file and extract properties from it
+
+#### Contribution
+Contributions are welcome! Please submit a pull request or open an issue if you have suggestions or improvements.
+If you have any questions you can send an email
+to harrison.sohrab@gmail.com
+ 
