@@ -5,6 +5,7 @@ https://www.linkedin.com/posts/homayounsrp_graphrag-vectorrag-activity-722376528
 ## Detailed Implementation Tutorial
 https://medium.com/@homayoun.srp/building-a-knowledge-graph-for-rag-using-neo4j-e69d3441d843
 
+
 This project is divided into two main parts:
 
 1. **Designing the Knowledge Graph and Ingesting Data**
